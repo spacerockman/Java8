@@ -1,8 +1,4 @@
-package com.company.java8;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+package java8;
 
 public class LambdaTest {
     public static void main(String[] args) {
