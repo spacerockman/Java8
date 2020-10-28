@@ -20,7 +20,7 @@ public class LambdaStream {
         System.out.println(sortedCo);
 
         //----------------------------------------------------
-        //change array to stream
+        //change array to stream / arrayからstreamに転換
         String [] companies2 = {"Facebook","flag","amazon","apple"};
         List<String> sorted2 = Stream.of(companies2)
                 .filter(c -> c.startsWith("F"))
@@ -31,7 +31,7 @@ public class LambdaStream {
         
         
         //----------------------------------------------------
-        //change collection to stream
+        //change collection to stream / collection から streamに転換 
         Set<String> set = new HashSet<>(companies);
         List<String> sorted3 = set.stream()
                 .filter(c -> c.startsWith("f"))
@@ -41,7 +41,7 @@ public class LambdaStream {
         System.out.println(sorted3);
 
         //----------------------------------------------------
-        //get the information from file to stream
+        //get the information from file to stream　ローカルファイルから情報をstreaｍに転換
         try{
 
             Stream<String> fromFile = Files.lines(Paths.get("src/com/company/java8/test.txt"));
