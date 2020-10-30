@@ -1,10 +1,8 @@
-package java8;
+package java8.lambda;
 
-import java8.model.Employee;
+import java8.lambda.model.Employee;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class StreamFilter{
     public static void main(String[] args) {

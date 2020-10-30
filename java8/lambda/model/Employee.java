@@ -1,4 +1,4 @@
-package java8.model;
+package java8.lambda.model;
 
 import java.util.function.Predicate;
 

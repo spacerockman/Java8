@@ -1,4 +1,4 @@
-package java8;
+package java8.lambda;
 
 import java.io.IOException;
 import java.nio.file.Files;
