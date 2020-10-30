@@ -1,5 +1,7 @@
 package java8.model;
 
+import java.util.function.Predicate;
+
 public class Employee{
     private Integer id;
     private Integer age;
@@ -65,4 +67,7 @@ public class Employee{
                 ", lastName='" + lastName + '\'' +
                 '}';
     }
+
+    public static Predicate<Employee> ageGreaterThan30 = x -> x.getAge() > 30;
+    public static Predicate<Employee> genderM = x -> x.getGender().equals("male");
 }

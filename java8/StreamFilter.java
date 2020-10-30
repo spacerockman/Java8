@@ -22,5 +22,13 @@ public class StreamFilter{
                 .forEach(string ->{
                     System.out.println(string.toString());
                 });
+
+        System.out.println("============================================");
+
+        Arrays.asList(employee,employee2,employee3,employee4,employee5,employee6,employee7).stream()
+                .filter(Employee.ageGreaterThan30.and(Employee.genderM).negate())
+                .forEach(string ->{
+                    System.out.println(string.toString());
+                });
     }
 }
