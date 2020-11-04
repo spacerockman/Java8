@@ -30,5 +30,15 @@ public class SortList {
                 .reversed()
         );
         employees.forEach(System.out::println);
+        System.out.println("======================");
+        //rewrite the interface
+        employees.sort((o1, o2)-> {
+                if(o1.getAge() == o2.getAge()){
+                    return 0;
+                }
+                return o1.getAge() - o2.getAge() >0? -1:1;
+            }
+        );
+        employees.forEach(System.out::println);
     }
 }
