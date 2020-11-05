@@ -70,4 +70,6 @@ public class Employee{
 
     public static Predicate<Employee> ageGreaterThan30 = x -> x.getAge() > 30;
     public static Predicate<Employee> genderM = x -> x.getGender().equals("male");
+    public static Predicate<Employee> getAgeGreaterThan70 = x -> x.getAge() > 70;
+    public static Predicate<Employee> getAgeGreaterThan40 = x -> x.getAge() >40;
 }
